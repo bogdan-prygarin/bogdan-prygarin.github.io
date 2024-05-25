@@ -58,7 +58,8 @@ body {
     font-family: 'SF UI Display', sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--tg-theme-bg-color);
+    background-image: linear-gradient(#fff, #ddd4ff, #fff);
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
     transition: filter 0.5s ease, background-image 0.5s ease;
@@ -143,27 +144,54 @@ nav {
   height: 200px;
   overflow: hide;
   z-index: -6;
-  border-radius: 10%;
   transform: rotate(-20deg);
   top: 135px;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+#trianglea {
+  right: -97px;
+  position: fixed;
+  background-image: linear-gradient(to bottom, #eee7ff, #bbb2ee);
+  width: 200px;
+  height: 200px;
+  overflow: hide;
+  z-index: -6;
+  border-radius: 10%;
+  transform: rotate(-20deg);
+  top: 290px;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
 #triangle1 {
-  right: -30px;
-  color: #6644ff;
+  right: -57px;
+  color: #aaa0ee;
   position: fixed;
-  background-image: linear-gradient(to right top, #eee7ff, #bbb2ee);
+  background-image: linear-gradient(to right, #eee7ff, #bbb2ee);
   width: 180px;
-  height: 180px;
+  height: 349px;
   overflow: hide;
   z-index: -5;
-  border-radius: 7%;
+  border-radius: 1.6rem;
   transform: rotate(-20deg);
-  top: 145px;
-  text-align: inherit;
-  text-decoration: underline;
+  top: 138px;
+  text-align: justify;
   font-family: monospace;
   font-weight: 900;
+}
+
+#triangle2 {
+  position: fixed;
+  width: 70px;
+  height: 20px;
+  background-color: #bbb2ee;
+  right: 49px;
+  transform: rotate(-20deg);
+  border-radius: 30px;
+  top: 155px;
+  z-index: -4;
 }
 
 header h1 {
@@ -295,13 +323,13 @@ h1 {
   right: -65px;
   position: fixed;
   width: 270px;
-  height: 270px;
+  height: 500px;
   overflow: hide;
   border-radius: 10%;
   transform: rotate(-20deg);
   top: 135px;
   backdrop-filter: blur(0.5px);
-  z-index: -4;
+  z-index: -3;
   transition: 0.5s;
 }
 
