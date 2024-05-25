@@ -1,1 +1,1 @@
-# bogdan-prygarin.github.io
+# bogdanprygarin.github.io
